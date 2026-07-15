@@ -1,5 +1,5 @@
 <div align="center">
-  <img src="./assets/mirator-wordmark.svg" alt="mirator — stories written with love and angst, from the human heart and mind" width="640">
+  <img src="mirator-wordmark.svg" alt="mirator — stories written with love and angst, from the human heart and mind" width="640">
 
   <p><em>lat. <strong>mirator</strong>, noun — one who gazes, one who admires.</em></p>
 
