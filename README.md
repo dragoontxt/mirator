@@ -1,5 +1,5 @@
 <div align="center">
-  <img src="/assets/mirator-wordmark.svg" alt="mirator — stories written with love and angst, from the human heart and mind" width="640">
+  <img src="mirator-wordmark.svg" alt="mirator — stories written with love and angst, from the human heart and mind" width="640">
 
   <p><em>lat. <strong>mirator</strong>, noun — one who gazes, one who admires.</em></p>
 
@@ -15,6 +15,38 @@
 **mirator** is a small, hand-kept archive of fanfiction and original fiction — no algorithm, no feed, no follower count. Just a shoebox of stories with a wax seal on the lid, meant to be opened slowly.
 
 This repo is the source for [mirator.amor-omnia.org](https://mirator.amor-omnia.org): static HTML pages, a tiny Node build script, and a folder of markdown where every story starts its life before it's set out on the shelf.
+
+<br>
+
+## color palette
+
+*Mirator* — the one who gazes, who admires — is a word for looking at something so long you stop noticing you're doing it. The palette is built the same way: no bright, attention-grabbing color anywhere. Everything sits in candlelight and old wine, like a letter read by one lamp, long after everyone else has gone to bed.
+
+Every value below is sampled directly from the site's own `:root` block (identical across all seven pages) — this isn't a proposed theme, it's the one already in production:
+
+| swatch | name | hex | used for |
+|---|---|---|---|
+| ![#221014](https://img.shields.io/badge/-%23221014?style=flat-square&color=221014) | ink | `#221014` | `--bg` — the page itself, near-black wine |
+| ![#2f171a](https://img.shields.io/badge/-%232f171a?style=flat-square&color=2f171a) | wax | `#2f171a` | `--panel` — cards, envelopes, anything raised off the page |
+| ![#B03039](https://img.shields.io/badge/-%23B03039?style=flat-square&color=B03039) | claret | `#B03039` | `--red` — card borders, the deepest accent |
+| ![#e8475a](https://img.shields.io/badge/-%23e8475a?style=flat-square&color=e8475a) | rose | `#e8475a` | `--pink` — titles, hearts, the color that does most of the talking |
+| ![#e0a030](https://img.shields.io/badge/-%23e0a030?style=flat-square&color=e0a030) | candlelight | `#e0a030` | `--gold` — small warm details, the one note that isn't red or neutral |
+| ![#f2e2dc](https://img.shields.io/badge/-%23f2e2dc?style=flat-square&color=f2e2dc) | parchment | `#f2e2dc` | `--cream` — primary text, envelope paper |
+| ![#d8bcb8](https://img.shields.io/badge/-%23d8bcb8?style=flat-square&color=d8bcb8) | dust | `#d8bcb8` | `--text-dim` — body copy, everything quieter than a title |
+
+```css
+:root{
+  --bg:       #221014;   /* ink */
+  --panel:    #2f171a;   /* wax */
+  --red:      #B03039;   /* claret */
+  --pink:     #e8475a;   /* rose */
+  --gold:     #e0a030;   /* candlelight */
+  --cream:    #f2e2dc;   /* parchment */
+  --text-dim: #d8bcb8;   /* dust */
+}
+```
+
+This is copy-pasted verbatim from every page's `<style>` block — if you're touching the theme, that one block is the single place to do it.
 
 <br>
 
@@ -135,35 +167,7 @@ The whole site runs on the same handful of design pieces, reused page to page: a
 
 <br>
 
-## color palette
 
-*Mirator* — the one who gazes, who admires — is a word for looking at something so long you stop noticing you're doing it. The palette is built the same way: no bright, attention-grabbing color anywhere. Everything sits in candlelight and old wine, like a letter read by one lamp, long after everyone else has gone to bed.
-
-Every value below is sampled directly from the site's own `:root` block (identical across all seven pages) — this isn't a proposed theme, it's the one already in production:
-
-| swatch | name | hex | used for |
-|---|---|---|---|
-| ![#221014](https://img.shields.io/badge/-%23221014?style=flat-square&color=221014) | ink | `#221014` | `--bg` — the page itself, near-black wine |
-| ![#2f171a](https://img.shields.io/badge/-%232f171a?style=flat-square&color=2f171a) | wax | `#2f171a` | `--panel` — cards, envelopes, anything raised off the page |
-| ![#B03039](https://img.shields.io/badge/-%23B03039?style=flat-square&color=B03039) | claret | `#B03039` | `--red` — card borders, the deepest accent |
-| ![#e8475a](https://img.shields.io/badge/-%23e8475a?style=flat-square&color=e8475a) | rose | `#e8475a` | `--pink` — titles, hearts, the color that does most of the talking |
-| ![#e0a030](https://img.shields.io/badge/-%23e0a030?style=flat-square&color=e0a030) | candlelight | `#e0a030` | `--gold` — small warm details, the one note that isn't red or neutral |
-| ![#f2e2dc](https://img.shields.io/badge/-%23f2e2dc?style=flat-square&color=f2e2dc) | parchment | `#f2e2dc` | `--cream` — primary text, envelope paper |
-| ![#d8bcb8](https://img.shields.io/badge/-%23d8bcb8?style=flat-square&color=d8bcb8) | dust | `#d8bcb8` | `--text-dim` — body copy, everything quieter than a title |
-
-```css
-:root{
-  --bg:       #221014;   /* ink */
-  --panel:    #2f171a;   /* wax */
-  --red:      #B03039;   /* claret */
-  --pink:     #e8475a;   /* rose */
-  --gold:     #e0a030;   /* candlelight */
-  --cream:    #f2e2dc;   /* parchment */
-  --text-dim: #d8bcb8;   /* dust */
-}
-```
-
-This is copy-pasted verbatim from every page's `<style>` block — if you're touching the theme, that one block is the single place to do it.
 
 <br>
 
